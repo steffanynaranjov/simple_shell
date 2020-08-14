@@ -60,6 +60,8 @@ $
 
 <pre><code>gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 </code></pre>
+<p> And you manual will be compiled in this way: </p>
+<pre><code>man ./man_1_simple_shell </code></pre>
 
 <h3>Testing</h3>
 
