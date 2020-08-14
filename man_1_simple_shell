@@ -1,0 +1,71 @@
+.TH SIMPLE_SHELL ".1" "August 20, 2020" "Simple Shell Manual Page"
+
+.SH NAME
+.B hsh
+-Simple shell implementation of UNIX command line - Holberton school Project
+.PP
+
+.SH SYNOPSIS
+.B ./hsh
+.PP
+
+.SH Description
+This is a simple command line interpreter capable of executing commands read
+from standard input. This shell works in the same way as .B sh.
+
+.SH Overview
+The shell is a program that reads lines from either a file or the terminal, interprets them, and  executes other commands. Commands can be typed directly to the.
+
+.SH Invocation
+Shell could be run in interactive mode where input is accepted from the keyboard ./hsh.  It also works in a non-interactive mode, the shell is run from a script or standard input from a echo standard output. echo "/bin/ls" | ./hsh.
+
+To run the shell you should compile all the .c files in the repo with GNU Comiler Collectio and execute the output file, as follow:
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+Where hsh would be the file to execute:
+.RS
+.B $ ./hsh
+.P
+.RE
+Simple Shell would be run in interactive mode by executing the hsh. Once you execute it, a prompt ($ ) will appear waiting for you to type a command followed by an enter. Once you press enter the shell will execute the command and a new prompt ('$') will appear again expecting a new command. To close the shell you have to type exit or ctrl D.  
+
+The non-interactive mode uses shell scripts. This includes the use of piping ('|'). Example:
+.P
+.RS
+.B echo '/bin/ls' | ./hsh
+
+.SH BUILT-IN COMMANDS
+.RS information on built-in commands
+.B  exit
+- Shell process is terminated, and exit from it with zero for success, any other value indicating a failure on the last executed process.
+.PP
+.B  env
+- Prints all the environmental variables of Simple shell.
+
+.SH Pipelines
+This shell does not handle with pipelines |.
+
+.SH Special Parameters
+.IP None
+This shell does not handle with special characters.
+
+.SH ENVIRONMENT
+.IP HOME
+Automatically set from the user's login direcotyr. Default argument for the
+cd builtin.
+.IP PATH
+Default search for executables.
+
+.SH SEE ALSO
+sh(1)
+
+.SH BUGS
+No known bugs. Please contact any of the authors if a bug appears.
+
+.SH AUTHORS
+Steffany Naranjo Vargas <1792@holbertonschool.com>
+.PP
+Juan Delgado <1800@holbertonschool.com>
