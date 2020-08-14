@@ -3,7 +3,7 @@
 <h2> Description </h2>
 <p> This a collaborative project making by Juan Delgado and Steffany Naranjo Vargas, students of Holberton School Cali. In this repository you will find the <strong> simple_shell project </strong>. In this project we have to develope our own UNIX command interpreter or shell.
 <br> </br>
-<p> This project works in the same ways as <code> sh >/code works <code> (/bin/sh) </code>
+<p> This project works in the same ways as <code> sh </code> works <code> is equal than (/bin/sh) </code>
 <br> </br>
 <h2>Resources</h2>
 
