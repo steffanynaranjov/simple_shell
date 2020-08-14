@@ -90,4 +90,5 @@ $
 
 <h2> Authors </h2>
 <a href="https://github.com/JuanDelgado06">Juan Delgado</a>
+<br> </br>
 <a href="https://github.com/steffanynaranjov">Steffany Naranjo Vargas</a>
