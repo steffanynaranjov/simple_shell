@@ -41,12 +41,25 @@ int exec(char **args);
 char *gline(void);
 void handle_sigint(int n);
 void free_memory(char **list, int t);
+<<<<<<< HEAD
 int _strlen(char *str);
 char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 int _print_env(char *av, char **env);
 int _exitt(char *av, int num);
 void _print_error(int status, char *s);
+=======
+
+int _strlen(char *str);
+char *_strcpy(char *dest, char *src);
+int _strcmp(char *s1, char *s2);
+
+int _print_env(char *av, char **env);
+int _exitt(char *av, int num);
+
+void _print_error(int status, char *s);
+
+>>>>>>> 8e3b5083d05563d4fcfca32279ffff34fd1852c0
 args_t split_line(char *line);
 
 #endif /* SHELL_H */
