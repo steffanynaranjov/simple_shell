@@ -30,7 +30,7 @@ Where hsh would be the file to execute:
 .B $ ./hsh
 .P
 .RE
-Simple Shell would be run in interactive mode by executing the hsh. Once you execute it, a prompt ($ ) will appear waiting for you to type a command followed by an enter. Once you press enter the shell will execute the command and a new prompt ('$') will appear again expecting a new command. To close the shell you have to type exit or ctrl D.  
+Simple Shell would be run in interactive mode by executing the hsh. Once you execute it, a prompt ($ ) will appear waiting for you to type a command followed by an enter. Once you press enter the shell will execute the command and a new prompt ('$') will appear again expecting a new command. To close the shell you have to type exit or ctrl D.
 
 The non-interactive mode uses shell scripts. This includes the use of piping ('|'). Example:
 .P
