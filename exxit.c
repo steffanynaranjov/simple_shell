@@ -2,7 +2,6 @@
 /**
 * exxit - handle exit command
 * @av: string
-* @num: num
 * Description: out of the shell with exit
 * Return: 1 0r 0
 */
