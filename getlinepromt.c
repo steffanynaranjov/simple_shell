@@ -42,7 +42,8 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 		{
 			print_errors(argv[0], cont, av[0]), cont++;
 			if (isatty(STDIN_FILENO))
-				write(STDOUT_FILENO, "$ ", 2);
+				write(STDOUT_FILENO, "$ ", 2),
+					free(arv), _free(av);
 			else
 				free(buff), free(arv), _free(av), exit(127);
 		}
