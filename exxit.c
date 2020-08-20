@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
-* exxitt - handle exit command
+* exxit - handle exit command
 * @av: string
 * @num: num
 * Description: out of the shell with exit
@@ -9,6 +9,7 @@
 int exxit(char *av, int num)
 {
 	int status;
+
 	status = _strcmp(av, "exit");
 
 	if (status == 0)
