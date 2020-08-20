@@ -10,11 +10,11 @@
 int print_env(char *av, char **env)
 {
 	unsigned int x = 0, length;
-	int status;
+	char *s = "env";
 
-	status = _strcmp(av, "env");
-
-	if (status == 0)
+	for (; av[i] > 96 && av[i] < 123 && av[i] == s[i]; i++)
+		;
+	if (i == 3)
 	{
 		x = 0;
 		while (env[x])
