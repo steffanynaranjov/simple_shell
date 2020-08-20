@@ -11,9 +11,11 @@ int print_env(char *av, char **env)
 {
 	unsigned int x = 0, length;
 	int status;
+
 	status = _strcmp(av, "env");
 
 	if (status == 0)
+
 	{
 		x = 0;
 		while (env[x])

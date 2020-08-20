@@ -14,11 +14,7 @@ int exxit(char *av, int num)
 
 	if (status == 0)
 	{
-		free(av);
-		if (num == 512) /*exit 2 */
-			exit(2);
-		else
-			exit(num);
+		exit(num);
 	}
 	return (1);
 }
