@@ -6,7 +6,7 @@
 * Description: out of the shell with exit
 * Return: 1 0r 0
 */
-int exxit(char *av, int num)
+int exxit(char *av)
 {
 	int status;
 
@@ -14,7 +14,7 @@ int exxit(char *av, int num)
 
 	if (status == 0)
 	{
-		exit(num);
+		exit(1);
 	}
 	return (1);
 }
