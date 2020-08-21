@@ -6,7 +6,7 @@
 * @env: environment
 * @cont: counter
 * @flag_1: flag
-* @num: number
+* @n: number
 * Return: a pointer
 */
 char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *n)
