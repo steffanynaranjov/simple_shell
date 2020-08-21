@@ -29,7 +29,7 @@ int print_env(char *av, char **env);
 void getav(int *x_av, char **av, char *arv);
 int fndp(int xpath, char *env, char *arv, int x_av, int start, char **path);
 void Upath(char **av, char *env, char *arv, int x_av, int *pfid);
-char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *num);
+char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *n);
 int cdir(char **argv, char **av, int *cont);
 
 
