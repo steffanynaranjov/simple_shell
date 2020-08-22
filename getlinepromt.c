@@ -19,7 +19,6 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 		write(STDOUT_FILENO, "$ ", 2), *flag = 0;
 	while ((lenght = getline(&buff, &sbuff, stdin)) != -1)
 	{
-		pfnd = 0, flg = 0;
 		if (lenght == EOF)
 		{
 			free(buff);
@@ -33,7 +32,8 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 			continue;
 		}
 		print_env(av[0], env);
-		exxit(av[0], av, env);
+		if ((_strcmp(av[0], "exit")) == 0)
+			exxit(av);	
 		if (access(av[0], X_OK) == 0 && !opendir(av[0]))
 			exece(av, &num), cont++;
 		else if (av && env != NULL)
