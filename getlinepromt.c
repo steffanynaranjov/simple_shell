@@ -33,7 +33,9 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 			continue;
 		}
 		print_env(av[0], env);
-		exxit(av[0]);
+		simple_cd(av, &flg);
+		if ((_strcmp(av[0], "exit")) == 0)
+			free(buff), simple_exit(av);
 		if (access(av[0], X_OK) == 0 && !opendir(av[0]))
 			exece(av, &num), cont++;
 		else if (av && env != NULL)
