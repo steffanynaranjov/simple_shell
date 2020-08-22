@@ -38,7 +38,7 @@ int print_env(char *av, char **env)
 * Description: prints environment finded
 * Return: 1
 */
-int find_env(char *av, char **env)
+char *find_env(char *av, char **env)
 {
 	int i, x, len;
 	char *temp, *temp2, *token;
@@ -53,17 +53,15 @@ int find_env(char *av, char **env)
 			;
 		if (i == len)
 		{
-			printf("Encontramos Home temp = %s\n", temp);
 			token = strtok(env[x], "=");
 			while (token != NULL)
 			{
 				temp2 = token;
 				token = strtok(NULL, "=");
 			}
-			printf("FInalmente token = %s\n", temp2);
-			break;
+			return (temp2);
 		}
 		++x;
 	}
-	return (1);
+	return ("");
 }
