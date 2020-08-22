@@ -1,6 +1,25 @@
 #include "shell.h"
 
 /**
+ * run_func - execute function
+ * @args: list of arguments
+ * @env: environment variables
+ * @flg: flag indicating error
+ *
+ * Return: 0
+ */
+int run_func(char **args, char **env, int *flg)
+{
+	if ((_strcmp(args[0], "env")) == 0)
+		print_env(args[0], env);
+	if ((_strcmp(args[0], "cd")) == 0)
+		simple_cd(args, flg);
+	if ((_strcmp(args[0], "exit")) == 0)
+		simple_exit(args);
+
+	return (0);
+}
+/**
  * simple_exit - cause a termination of simple shell
  * @args: list of user input arguments
  *
