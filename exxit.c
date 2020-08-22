@@ -13,6 +13,7 @@ int exxit(char *av)
 
 	if (status == 0)
 	{
+		free(av);
 		exit(1);
 	}
 	return (1);
