@@ -1,13 +1,19 @@
 #include "shell.h"
 /**
 * exxit - handle exit command
-* @av: double char pointer
+* @av: string
 * Description: out of the shell with exit
 * Return: 1 0r 0
 */
-int exxit(char **av)
+int exxit(char *av)
 {
-	_free(av);
-	exit(1);
+	int status;
+
+	status = _strcmp(av, "exit");
+
+	if (status == 0)
+	{
+		exit(1);
+	}
 	return (1);
 }
