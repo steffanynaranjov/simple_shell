@@ -17,7 +17,7 @@ ssize_t getline_pr(char **argv, int *flag, char **env);
 int exece(char **av, int *num);
 int main(int argc, char **argv, char **env);
 void controls(int sig);
-int exxit(char *av);
+int exxit(char *av, char **args, char **env);
 int _strlen(char *s);
 int _strcmp(char *s1, char *s2);
 void fill(char *str, char *p);
