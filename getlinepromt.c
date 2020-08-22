@@ -11,7 +11,7 @@
 ssize_t getline_pr(char **argv, int *flag, char **env)
 {
 	int cont = 1, flg = 0, pfnd = 0, num = 0;
-	char *buff = NULL, **av, *arv;
+	char *buff = NULL, *arv = NULL, **av;
 	size_t sbuff = 1;
 	ssize_t lenght;
 
@@ -33,7 +33,7 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 		}
 		print_env(av[0], env);
 		if ((_strcmp(av[0], "exit")) == 0)
-			exxit(av);	
+			free(buff), exxit(av);
 		if (access(av[0], X_OK) == 0 && !opendir(av[0]))
 			exece(av, &num), cont++;
 		else if (av && env != NULL)
