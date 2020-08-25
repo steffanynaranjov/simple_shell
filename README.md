@@ -1,7 +1,7 @@
-<h1> Making our own simple shell </h1>
+<h1> Simple Shell </h1>
 <img src ="https://www.entreprises-magazine.com/wp-content/uploads/2020/05/Holberton-School-696x385.jpg">
 <h2> Description </h2>
-<p> This a collaborative project making by <a href="https://github.com/JuanDelgado06">Juan Delgado</a> and <a href="https://github.com/steffanynaranjov">Steffany Naranjo Vargas</a> , students of Holberton School Cali. In this repository you will find the <strong> simple_shell project </strong>. In this project we have to develope our own UNIX command interpreter or shell.
+<p> This a collaborative project making by <a href="https://github.com/JuanDelgado06">Juan Delgado</a> and <a href="https://github.com/steffanynaranjov">Steffany Naranjo Vargas</a> , For Holberton School Cali. In this repository you will find the <strong> simple_shell project </strong>. In this project we have to develope our own UNIX command interpreter or shell.
 <br> </br>
 <p> This project works in the same ways as <code> sh </code> works <code> is equal than (/bin/sh) </code>
 <br> </br>
