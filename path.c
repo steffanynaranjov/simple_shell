@@ -6,10 +6,10 @@
 * @env: environment
 * @cont: counter
 * @flag_1: flag
-* @num: number
+* @n: number
 * Return: a pointer
 */
-char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *num)
+char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *n)
 {
 	int x = 0, x_av, y;
 	char *arv;
@@ -19,6 +19,6 @@ char *path_(char **av, int *pfid, char **env, int *cont, int *flag_1, int *num)
 	for (y = 0; env[y] && access(av[0], X_OK) != 0 && *pfid == 0; y++)
 		Upath(av, env[y], arv, x_av, pfid);
 	if (access(av[0], X_OK) == 0)
-		exece(av, num), cont++, *flag_1 = 1, free(arv);
+		exece(av, n), cont++, *flag_1 = 1, free(arv);
 	return (arv);
 }

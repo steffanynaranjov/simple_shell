@@ -32,8 +32,9 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 				write(STDOUT_FILENO, "$ ", 2);
 			continue;
 		}
-		print_env(av[0], env);
-		exxit(av[0]);
+		if ((_strcmp(av[0], "exit")) == 0)
+			free(buff);
+		run_func(av, env, &flg);
 		if (access(av[0], X_OK) == 0 && !opendir(av[0]))
 			exece(av, &num), cont++;
 		else if (av && env != NULL)
@@ -42,8 +43,7 @@ ssize_t getline_pr(char **argv, int *flag, char **env)
 		{
 			print_errors(argv[0], cont, av[0]), cont++;
 			if (isatty(STDIN_FILENO))
-				write(STDOUT_FILENO, "$ ", 2),
-					free(arv), _free(av);
+				write(STDOUT_FILENO, "$ ", 2), free(arv), _free(av);
 			else
 				free(buff), free(arv), _free(av), exit(127);
 		}
