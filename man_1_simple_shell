@@ -1,7 +1,6 @@
-.TH SIMPLE_SHELL ".1" "August 20, 2020" "Simple Shell Manual Page"
-
+.TH man 1 SIMPLE_SHELL  "August 20, 2020" "Simple Shell Manual Page"
 .SH NAME
-.B hsh
+.B _hsh
 -Simple shell implementation of UNIX command line - Holberton school Project
 .PP
 
